@@ -69,7 +69,7 @@ namespace Mission.Controllers
         // GET: Categories/Edit/5
         public async Task<IActionResult> Upsert(int? id)
         {
-            Categorie categorie = new Categorie();
+            Categorie ?categorie = new Categorie();
             if (id == null)
             {
                 return View(categorie);
